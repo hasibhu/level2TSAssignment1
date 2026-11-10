@@ -1,7 +1,7 @@
 
 
 
-const concatenateArrays<T>  =  (...arrays: T[][]) : T[] => {
+const concatenateArrays  =  <T>(...arrays: T[][]) : T[] => {
 
     const result: T[] = [];
 
