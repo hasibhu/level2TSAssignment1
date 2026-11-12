@@ -1,4 +1,4 @@
-#How typescript works?
+# How typescript works?
 When the TypeScript compiler runs (tsc), it acts as both a static type checker and a transpiler. Under the hood, TypeScript code is never actually executed by a browser or Node.js in its .ts form; instead, it is converted into pure JavaScript file.
 
 ## What Happens Under the Hood During Compilation (tsc)?
