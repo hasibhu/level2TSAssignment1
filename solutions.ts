@@ -1,8 +1,5 @@
 
 
-// Solution No. - 1
-
-
 const multiplyValue = (value: number, multiplier?: number): number => {
     
     return value * (multiplier ?? 2)
@@ -10,9 +7,6 @@ const multiplyValue = (value: number, multiplier?: number): number => {
 
 
 
-
-
-// Solution No. - 2
 
 type Input = string | number | boolean;
 
@@ -35,9 +29,6 @@ const processInput = (input : Input): InputReturn => {
 
 
 
-
-// 3
-
 const formatCoordinate = (
   coordinate: readonly [number, number, string]
 ): string => {
@@ -45,14 +36,6 @@ const formatCoordinate = (
 
   return `Location: ${locationName} (${latitude}, ${longitude})`;
 };
-
-
-
-
-
-
-
-// Solution No. - 4
 
 
 const concatenateArrays  =  <T>(...arrays: T[][]) : T[] => {
@@ -67,7 +50,7 @@ const concatenateArrays  =  <T>(...arrays: T[][]) : T[] => {
 
 }
 
-// 5
+
 
 
 interface Course {
@@ -83,7 +66,7 @@ const getPopularCourses = (courses: Course[], minStudents: number): Course[] => 
 }
 
 
-// 6
+
 
 const pluckValues = <T, K extends keyof T>(items: T[], key: K): T[K][] => {
   return items.map(item => item[key]);
@@ -92,7 +75,6 @@ const pluckValues = <T, K extends keyof T>(items: T[], key: K): T[K][] => {
 
 
 
-// Solution No. - 7
 
 class Employee {
   protected name: string;
@@ -107,8 +89,6 @@ class Employee {
     return `Employee: ${this.name}, Base Salary: ${this.baseSalary}`;
   }
 }
-
-
 
 class Manager extends Employee {
   private department: string;
@@ -127,8 +107,6 @@ class Manager extends Employee {
 
 
 
-
-// Solution No. - 8
 
 
 const validateAgeAsync = (age: number): Promise<string> => {
